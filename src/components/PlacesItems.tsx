@@ -19,13 +19,13 @@ function PlacesItem(props: PlacesItemProps): JSX.Element {
     return (
         <section>
             <p>
-                <img src= {props.image} alt = ""  width = "200"  height = "200" />
+                <img src= {props.image} alt = ""  width = "500" />
             </p>
             <h1>
                 {props.title}
             </h1>
             <h3>
-                {props.location.city}, {props.location.country}, {props.location.mapLink}
+                {props.location.city}, {props.location.country} <a href= {props.location.mapLink}>(map link)</a>
             </h3>
             <p>
                 {props.content}
