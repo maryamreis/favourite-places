@@ -17,13 +17,13 @@ interface PlacesItemProps {
     
 function PlacesItem(props: PlacesItemProps): JSX.Element {
     return (
-        <section>
+        <section className = "places-content">
+            <h1 className = "title-font">
+                {props.title}
+            </h1>
             <p>
                 <img src= {props.image} alt = ""  width = "500" />
             </p>
-            <h1>
-                {props.title}
-            </h1>
             <h3>
                 {props.location.city}, {props.location.country} <a href= {props.location.mapLink}>(map link)</a>
             </h3>
